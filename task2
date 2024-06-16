@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6; /* Light grey */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61; /* Coral */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .filter-container {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .filter-options li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .filter-options li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-card {
+            background-color: #fff;
+            width: 300px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .product-info {
+            padding: 10px;
+        }
+
+        .product-info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+    <div class="filter-container">
+        <h2>Filter By:</h2>
+        <ul class="filter-options">
+            <li><a href="#" onclick="showCategory('Bikes')">Bikes</a></li>
+            <li><a href="#" onclick="showCategory('Cars')">Cars</a></li>
+            <!-- Add more filter options as needed -->
+        </ul>
+    </div>
+    <div class="product-list">
+        <div id="Bikes" style="display:none;">
+            <div class="product-card">
+                <img src="https://www.motociclismo.it/files/galleries/1/9/6/19675/B_2022-royal-enfield-classic-350-redditch-green.jpg" alt="RoyalEnfield">
+                <div class="product-info">
+                    <h3>RoyalEnfield</h3>
+                    <p>$1.99 per pound</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Jxs1Wi8nHq-JCnnhFdfRJgHaFx&pid=Api&rs=1&c=1&qlt=95&h=180" alt="KTM">
+                <div class="product-info">
+                    <h3>KTM</h3>
+                    <p>$0.69 per pound</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.TbcylLuyFYJ4B9sxZmoJqwHaFz&pid=Api&P=0&h=180" alt="JAWA">
+                <div class="product-info">
+                    <h3>JAWA</h3>
+                    <p>$0.89 per pound</p>
+                </div>
+            </div>
+        </div>
+        <div id="Cars" style="display:none;">
+            <div class="product-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.dsiC7a1xQd-CPZpBuMeCDgHaE8&pid=Api&P=0&h=180" alt="Lamborghini">
+                <div class="product-info">
+                    <h3>Lamnorghini</h3>
+                    <p>$2.49 per pound</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.t4cLYRgS6EgXeiB2AT_g4AHaEK&pid=Api&P=0&h=180" alt="Fortuner">
+                <div class="product-info">
+                    <h3>Fortuner</h3>
+                    <p>$1.29 per pound</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.FY03-QTQ0vTGuvQEsjzv9gHaE6&pid=Api&P=0&h=180" alt="Thar">
+                <div class="product-info">
+                    <h3>Thar</h3>
+                    <p>$2.99 per pound</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Your E-commerce Website</p>
+    </footer>
+
+    <script>
+        function showCategory(category) {
+            var categories = document.querySelectorAll('.product-list > div');
+            categories.forEach(function(cat) {
+                cat.style.display = 'none';
+            });
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
