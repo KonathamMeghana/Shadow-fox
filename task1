@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0;">
+
+    <header style="background: #333; color: #fff; padding: 1rem;">
+        <nav>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: inline; margin-right: 20px;"><a href="#about" style="color: #fff; text-decoration: none;">About</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#portfolio" style="color: #fff; text-decoration: none;">Portfolio</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#skills" style="color: #fff; text-decoration: none;">Skills</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" style="padding: 20px 0; background-color: #f9f9f9;">
+        <div style="width: 80%; margin: auto;">
+            <h2>About Me</h2>
+            <p style="margin-bottom: 20px;">Your introduction goes here...</p>
+        </div>
+    </section>
+
+    <section id="portfolio" style="padding: 20px 0; background-color: #f9f9f9;">
+        <div style="width: 80%; margin: auto;">
+            <h2>Portfolio</h2>
+            <!-- Your portfolio projects go here -->
+        </div>
+    </section>
+
+    <section id="skills" style="padding: 20px 0; background-color: #f9f9f9;">
+        <div style="width: 80%; margin: auto;">
+            <h2>Skills</h2>
+            <!-- Your skills section goes here -->
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 20px 0; background-color: #f9f9f9;">
+        <div style="width: 80%; margin: auto;">
+            <h2>Contact Me</h2>
+            <!-- Your contact information and form go here -->
+        </div>
+    </section>
+
+    <footer style="background: #333; color: #fff; text-align: center; padding: 1rem;">
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+</body>
+</html>
